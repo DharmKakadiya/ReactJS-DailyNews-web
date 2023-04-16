@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 import axios from 'axios'
 
 import NewsItem from './NewsItem'
@@ -141,7 +141,7 @@ export class News extends Component {
                     
                     return <div className="col-md-3" key={element.url}>
                                 <NewsItem  title={element.title?element.title.slice(0,30):""} description={element.description?element.description.slice(0,30):""}
-                                 imageurl={element.urlToImage} newsurl={element.url}/>
+                                 imageurl={element.urlToImage} newsurl={element.url} author={element.author} date={element.publishedAt}/>
                             </div>
                 })}
         </div>
