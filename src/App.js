@@ -13,7 +13,7 @@ export default class App extends Component {
       <div>
         <BrowserRouter>
         <Navbar/>
-        
+          
         <Routes>
             <Route exact path="/" element={<News key="general" country="in" category="general"/>}/> 
             <Route exact path="/business" element={<News key="business" country="in" category="business"/>}/> 
